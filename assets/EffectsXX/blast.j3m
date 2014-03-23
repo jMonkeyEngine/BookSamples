@@ -1,0 +1,19 @@
+Material blast : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        GlowColor : 1.0 1.0 0.0 1.0
+        UseMaterialColors : false
+        AlphaMap : Textures/bark.png
+        Specular : 1.0 0.0 0.0 1.0
+        Diffuse : 1.0 0.0 0.0 1.0
+        Ambient : 1.0 0.0 0.0 1.0
+        UseAlpha : false
+        DiffuseMap : Effects/flash.png
+     }
+    AdditionalRenderState {
+      Blend Additive
+      DepthWrite On
+      AlphaTestFalloff 0.0
+      ColorWrite On
+      DepthTest Off
+    }
+}

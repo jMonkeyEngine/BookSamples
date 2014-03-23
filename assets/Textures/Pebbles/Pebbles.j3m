@@ -1,0 +1,7 @@
+Material Pebbles : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+         Shininess: 8.0
+         DiffuseMap: Repeat Textures/Pebbles/Pebbles_diffuse.png
+         NormalMap:  Repeat Textures/Pebbles/Pebbles_normal.png
+     }
+}

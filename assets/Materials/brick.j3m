@@ -1,0 +1,8 @@
+Material My Material : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        DiffuseMap : Textures/BrickWall/BrickWall_diffuse.jpg
+        NormalMap : Textures/BrickWall/BrickWall_normal.jpg
+        Specular : 1 1 1 1
+        Shininess : 8
+     }
+}

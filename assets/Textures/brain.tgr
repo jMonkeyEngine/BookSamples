@@ -1,0 +1,16 @@
+#NTEVersion 6
+#BeginNodes 3
+566 215
+engine.graphics.synthesis.texture.FilterNormalMap
+ExportName "NormalMap" Strength 5.0 endparameters
+390 211
+engine.graphics.synthesis.texture.FilterColorize
+ExportName "DiffuseMap" Gray_to_Color_Mapping 2 0.5803922 0.31764707 0.31764707 1.0 0.0 0.96862745 0.78039217 0.49411765 1.0 1.0 endparameters
+481 65
+engine.graphics.synthesis.texture.PatternPerlinNoise
+ExportName "" Transformation 1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0 Color_Mapping 3 1.0 1.0 1.0 1.0 0.0 0.0 0.0 0.0 1.0 0.6183575 1.0 0.99607843 0.99607843 1.0 1.0 ScaleX 3.0 ScaleY 2.0 ValueScale 1.0 Persistence 0.5 StartBand 3 EndBand 5 Seed -1 Periodic true endparameters
+#EndNodes
+#BeginConnections 2
+2 0 0
+2 1 0
+#EndConnections

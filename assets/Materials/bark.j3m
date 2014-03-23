@@ -1,0 +1,8 @@
+Material bark : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        UseMaterialColors : true
+        Diffuse : 1.0 0.8 0.2 1.0
+        DiffuseMap : Repeat Textures/bark.png
+        AlphaDiscardThreshold : 0.0
+     }
+}

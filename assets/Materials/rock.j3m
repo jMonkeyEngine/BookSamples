@@ -1,0 +1,9 @@
+Material My Material : Common/MatDefs/Light/Lighting.j3md {
+     MaterialParameters {
+        DiffuseMap : Repeat Textures/rock.png
+        UseAlpha : true
+        Diffuse :  0.8 0.8 1 1
+        Specular : 1 1 1 1
+        UseMaterialColors : true
+     }
+}
