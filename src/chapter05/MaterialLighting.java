@@ -35,7 +35,7 @@ public class MaterialLighting extends SimpleApplication {
         Material rockMat = new Material(assetManager,
                 "Common/MatDefs/Light/Lighting.j3md");
         rockMat.setTexture("DiffuseMap", assetManager.loadTexture(
-                "Textures/Pebbles/Pebbles_diffuse.jpg"));
+                "Textures/Pebbles/Pebbles_diffuse.png"));
         rockMat.setTexture("NormalMap", assetManager.loadTexture(
                 "Textures/Pebbles/Pebbles_normal.png"));
 
