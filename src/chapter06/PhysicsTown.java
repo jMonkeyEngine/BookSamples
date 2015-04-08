@@ -35,7 +35,7 @@ public class PhysicsTown extends SimpleApplication implements ActionListener {
     private boolean rotateLeft = false, rotateRight = false,
             strafeLeft = false, strafeRight = false,
             forward = false, backward = false;
-    private float speed=8;
+    private float speed=8f;
     private CameraNode camNode;
 
     public static void main(String[] args) {
@@ -43,6 +43,7 @@ public class PhysicsTown extends SimpleApplication implements ActionListener {
         app.start();
     }
 
+    @Override
     public void simpleInitApp() {
         initPhysics();
         initLight();
@@ -138,24 +139,30 @@ public class PhysicsTown extends SimpleApplication implements ActionListener {
      * No walking happens here yet -- we only keep track of 
      * the direction the user wants to go.
      */
+    @Override
     public void onAction(String binding, boolean isPressed, float tpf) {
-        if (binding.equals("Rotate Left")) {
-            rotateLeft = isPressed;
-        } else if (binding.equals("Rotate Right")) {
-            rotateRight = isPressed;
-        } else 
-        if (binding.equals("Strafe Left")) {
-            strafeLeft = isPressed;
-        } else if (binding.equals("Strafe Right")) {
-            strafeRight = isPressed;
-        } else  
-        if (binding.equals("Forward")) {
-            forward = isPressed;
-        } else if (binding.equals("Back")) {
-            backward = isPressed;
-        } else
-        if (binding.equals("Jump")) {
-            playerControl.jump();
+        switch (binding) {
+            case "Rotate Left":
+                rotateLeft = isPressed;
+                break;
+            case "Rotate Right":
+                rotateRight = isPressed;
+                break;
+            case "Strafe Left":
+                strafeLeft = isPressed;
+                break;
+            case "Strafe Right":
+                strafeRight = isPressed;
+                break;
+            case "Forward":
+                forward = isPressed;
+                break;
+            case "Back":
+                backward = isPressed;
+                break;
+            case "Jump":
+                playerControl.jump();
+                break;
         }
     }
 
