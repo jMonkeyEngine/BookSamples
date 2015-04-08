@@ -43,6 +43,7 @@ public class PhysicsTown extends SimpleApplication implements ActionListener {
         app.start();
     }
 
+    @Override
     public void simpleInitApp() {
         initPhysics();
         initLight();
