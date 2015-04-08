@@ -38,6 +38,7 @@ public class PhysicsKinematic extends SimpleApplication {
 
     public static void main(String args[]) {
         PhysicsKinematic app = new PhysicsKinematic();
+        app.setShowSettings(false);
         app.start();
     }
 
